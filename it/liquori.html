@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neckbiters — Liquori</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0e0e0f;
+      --text-main: #e6e6e6;
+      --text-muted: #9a9a9a;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 6vw 2rem;
+    }
+
+    .logo {
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 6vw 4rem;
+    }
+
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li a {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.3rem;
+	color: var(--text-main);           /* colore chiaro sul nero */
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	padding-bottom: 0.2rem;
+	text-decoration: none;
+	transition: color 0.3s, opacity 0.3s, border-color 0.3s;
+	}
+	
+	li a:hover {
+	color: var(--accent);              /* bianco pieno al passaggio */
+	border-color: rgba(255,255,255,0.4);
+	}
+
+
+    footer {
+      padding: 2rem 6vw 3rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .lang-switch a {
+	margin-left: 1rem;
+	opacity: 0.8;
+	color: var(--text-main);       /* chiaro sul nero */
+	text-decoration: none;
+	transition: color 0.3s, opacity 0.3s;
+	}
+	
+	.lang-switch a:hover {
+	color: var(--accent);          /* evidenzia al passaggio del mouse */
+	opacity: 1;
+	}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Neckbiters — Bite a Neck Spirits</div>
+  </header>
+
+  <main>
+    <h1>I nostri liquori</h1>
+    <ul>
+      <li><a href="liquore-1.html">Coffee Bomb - Batch #1</a></li>
+      <li><a href="liquore-2.html">Cioccolato Fondente</a></li>
+      <li><a href="liquore-3.html">Menta e Peperoncino</a></li>
+      <!-- aggiungi qui gli altri liquori -->
+    </ul>
+  </main>
+
+  <footer>
+    <div>© Neckbiters</div>
+    <div class="lang-switch">
+      <a href="../en/liquors.html">EN</a>
+      <span>IT</span>
+    </div>
+  </footer>
+</body>
+</html>
+
