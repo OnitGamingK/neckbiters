@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neckbiters</title>
+
+  <style>
+    :root {
+      --dark-1: #0e0e0f;
+      --dark-2: #161618;
+      --text-main: #e6e6e6;
+      --text-muted: #bdbdbd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--dark-1);
+      overflow: hidden;
+    }
+
+    .landing {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* LEFT / IT */
+    .panel.it {
+      position: absolute;
+      inset: 0;
+      background: var(--dark-1);
+      clip-path: polygon(0 0, 65% 0, 35% 100%, 0 100%);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 8vh 6vw;
+      cursor: pointer;
+      transition: background 0.4s ease;
+    }
+
+    /* RIGHT / EN */
+    .panel.en {
+      position: absolute;
+      inset: 0;
+      background: var(--dark-2);
+      clip-path: polygon(65% 0, 100% 0, 100% 100%, 35% 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 8vh 6vw;
+      cursor: pointer;
+      transition: background 0.4s ease;
+    }
+
+    .panel:hover {
+      background: #1f1f22;
+    }
+
+    .text {
+      max-width: 420px;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+    }
+
+    .text p {
+      font-size: clamp(1.4rem, 2.2vw, 2.2rem);
+      color: var(--text-main);
+    }
+
+    .hint {
+      margin-top: 1.2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .panel.it {
+        clip-path: polygon(0 0, 100% 0, 100% 55%, 0 45%);
+        align-items: flex-start;
+      }
+
+      .panel.en {
+        clip-path: polygon(0 45%, 100% 55%, 100% 100%, 0 100%);
+        align-items: flex-end;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="landing">
+
+    <!-- ITALIANO -->
+    <div class="panel it" onclick="location.href='it/index.html'">
+      <div class="text">
+        <p>
+          Prenditi il tempo di un morso.<br>
+          Assapora le curve di un bel collo.
+        </p>
+        <div class="hint">Italiano</div>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="panel en" onclick="location.href='en/index.html'">
+      <div class="text">
+        <p>
+          Take the time of a bite.<br>
+          Taste the curves of a beautiful neck.
+        </p>
+        <div class="hint">English</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
