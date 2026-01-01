@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neckbiters — Thanks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0e0e0f;
+      --text-main: #e6e6e6;
+      --text-muted: #9a9a9a;
+      --accent: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    h1, p, li {
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      padding: 2rem 6vw 3rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .lang-switch a {
+      margin-left: 1rem;
+      color: var(--text-main);
+      opacity: 0.8;
+      text-decoration: none;
+      transition: color 0.3s, opacity 0.3s;
+    }
+
+    .lang-switch a:hover {
+      color: var(--accent);
+      opacity: 1;
+    }
+
+    /* Correzione link blu */
+    a {
+      color: var(--text-main);
+      text-decoration: none;
+      transition: color 0.3s ease, opacity 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Neckbiters — Bite a Neck Spirits</div>
+  </header>
+
+  <main>
+    <h1>Thanks to…</h1>
+    <p>This page is dedicated to all the people, families, and entities who have supported us over the years. Every bottle, every sip, and every new experiment would have been impossible without you.</p>
+
+    <ul>
+      <li>Family and friends</li>
+      <li>Collaborators and local suppliers</li>
+      <li>Lovers of fine spirits and wild fruit</li>
+      <li><a href="inspirations.html">Beta testers and cultural inspirations →</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <div>© Neckbiters</div>
+    <div class="lang-switch">
+      <a href="../it/ringraziamenti.html">IT</a>
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </footer>
+</body>
+</html>
