@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neckbiters — Ringraziamenti</title>
+  <title>Neckbiters — Coffee Bomb</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,6 @@
       --bg: #0e0e0f;
       --text-main: #e6e6e6;
       --text-muted: #9a9a9a;
-      --accent: #ffffff;
     }
 
     body {
@@ -44,38 +43,14 @@
 
     h1 {
       font-family: 'Libre Baskerville', serif;
-      font-size: clamp(2rem, 3vw, 2.5rem);
+      font-size: clamp(1.8rem, 2.5vw, 2.2rem);
       margin-bottom: 1.5rem;
-      text-align: center;
     }
 
     p {
       font-family: 'Libre Baskerville', serif;
       font-size: clamp(1.2rem, 1.8vw, 1.6rem);
       margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-top: 2rem;
-    }
-
-    li {
-      margin-bottom: 1rem;
-      font-family: 'Libre Baskerville', serif;
-      font-size: 1.2rem;
-    }
-
-    li a {
-      color: var(--accent);
-      text-decoration: none;
-      transition: opacity 0.3s;
-    }
-
-    li a:hover {
-      opacity: 0.7;
     }
 
     footer {
@@ -89,17 +64,17 @@
     }
 
     .lang-switch a {
-      margin-left: 1rem;
-      opacity: 0.8;
-      color: var(--text-main);
-      text-decoration: none;
-      transition: color 0.3s, opacity 0.3s;
-    }
-
-    .lang-switch a:hover {
-      color: var(--accent);
-      opacity: 1;
-    }
+	margin-left: 1rem;
+	opacity: 0.8;
+	color: var(--text-main);       /* colore chiaro coerente con il sito */
+	text-decoration: none;
+	transition: opacity 0.3s, color 0.3s;
+	}
+	
+	.lang-switch a:hover {
+	opacity: 1;
+	color: var(--accent);          /* può essere bianco pieno o leggermente più acceso */
+	}
   </style>
 </head>
 
@@ -109,22 +84,17 @@
   </header>
 
   <main>
-    <h1>Grazie a…</h1>
-    <p>Questa pagina è dedicata a tutte le persone, famiglie e entità che ci hanno supportato nel corso degli anni. Ogni bottiglia, ogni sorso e ogni nuovo esperimento sarebbe stato impossibile senza di voi.</p>
-
-    <ul>
-      <li>Famiglia e amici</li>
-      <li>Collaboratori e fornitori locali</li>
-      <li>Amanti del buon bere e della frutta selvatica</li>
-      <li><a href="ispirazioni-culturali.html">Beta testers e ispirazioni culturali →</a></li>
-    </ul>
+    <h1>Coffee Bomb - Batch #1</h1>
+    <p>L'originale, il primo liquore Bite a Neck, espresso pieno e cremoso, nato dalla necessità di sentire il sapore di casa anche in Olanda.</p>
+    <p>Ingredienti: caffè espresso, zucchero, alcol, estratto di vaniglia, acqua, "GodVer", bottiglie di birra regalate dal collega bulgaro.</p>
+    <!-- eventuali foto, note o abbinamenti -->
   </main>
 
   <footer>
     <div>© Neckbiters</div>
     <div class="lang-switch">
-      <a href="../en/ringraziamenti.html">EN</a>
-      <a href="index.html">← Torna alla Home</a>
+      <a href="../../en/spirits/spirit-01.html">EN</a>
+      <a href="../liquori.html">← Torna alla lista</a>
     </div>
   </footer>
 </body>
