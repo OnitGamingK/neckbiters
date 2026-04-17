@@ -66,6 +66,27 @@
     .lang-switch a:hover {
       opacity: 1;
     }
+	
+	.subtle-link {
+  position: relative;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.subtle-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background: var(--text-main);
+  transition: width 0.3s ease;
+}
+
+.subtle-link:hover::after {
+  width: 100%;
+}
   </style>
 </head>
 
@@ -89,6 +110,12 @@
 
     <p>Heartfelt thanks from Giorgio, you knew that already tho, right?<br>
     Bite a Neck spirits - est. 2024</p>
+	
+	<p style="margin-top: 3rem; text-align: center;">
+  <a href="spirits.html" class="subtle-link">
+    Take a bite
+  </a>
+</p>
   </main>
 
    <footer>
